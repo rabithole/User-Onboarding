@@ -45,4 +45,15 @@ export default withFormik({
 		terms: yup.boolean().oneOf([true], 'must read terms'),
 		password: yup.string().required('password required!')
 	}),
+
+	handleSubmit: (values) => {
+    // 'https://reqres.in/api/animals'
+    axios.post('https://reqres.in/api/animals', values)
+    .then((res) => {
+      console.log(res)
+    })
+    .catch((err) => {
+      console.log('error:', err)
+    })
+  }
 })(Form1)
