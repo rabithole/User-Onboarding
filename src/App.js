@@ -1,17 +1,17 @@
 import React from 'react';
-import { withFormik, Form, Field } from 'formik';
-import * as yup from 'yup';
-import axios from 'axios';
+import ReactDOM from 'react-dom';
 import './App.css';
+
+import Form1 from './Form1';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <p>
-          This is the Very, Very Beginning of Something!
-        </p>
-        
+        <h2>
+          New User On-Boarding
+        </h2>
+       	<Form1 />
       </header>
     </div>
   );

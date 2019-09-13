@@ -31,3 +31,24 @@
     transform: rotate(360deg);
   }
 }
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.field {
+  margin-bottom: 10px;
+  height: 20px;
+  border-radius: 5px;
+  background-color: red;
+  color: white;
+  box-shadow: white 5px 5px 10px;
+}
+
+button {
+  width: 100px;
+  border-radius: 5px;
+  box-shadow: white 5px 5px 10px;
+}
